@@ -1,0 +1,45 @@
+.no-items {
+  background: #f0f0f3;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 32px;
+  padding-inline: 10px;
+  background: #f1f1f1;
+  box-shadow: inset -2px 2px 4px rgba(222, 222, 222, 0.2),
+    inset 2px -2px 4px rgba(222, 222, 222, 0.2),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.9),
+    inset 2px 2px 5px rgba(222, 222, 222, 0.9);
+  cursor: pointer;
+}
+
+.plus-button {
+  background: #f1f1f1;
+}
+
+.items-added {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.items-added .buttons {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
+  box-shadow: inset -2px 2px 4px rgba(222, 222, 222, 0.2),
+    inset 2px -2px 4px rgba(222, 222, 222, 0.2),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.9),
+    inset 2px 2px 5px rgba(222, 222, 222, 0.9);
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.items-added .buttons:hover {
+  background: #d0d0d0;
+}

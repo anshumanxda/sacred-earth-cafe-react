@@ -1,0 +1,28 @@
+.tab-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.tab-container .items {
+  flex-grow: 1;
+  flex-basis: 0;
+  cursor: pointer;
+  transition: all 300ms;
+  text-align: center;
+  font-weight: 500;
+}
+
+.items hr {
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.active-tab {
+  color: #3cbcb4;
+}
+
+.active-tab hr {
+  border: 1px solid #3cbcb4;
+  opacity: 1;
+}

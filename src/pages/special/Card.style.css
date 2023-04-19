@@ -1,0 +1,33 @@
+.card__name {
+  display: flex;
+  gap: 10px;
+}
+
+.card__name p {
+  font-size: 14px;
+}
+
+.card__price-add {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-inline: 10px;
+}
+
+.card__image {
+  max-width: 100%;
+  max-height: 163px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-container {
+  background: #f6f6f6;
+  box-shadow: inset -2px 2px 4px rgba(205, 205, 205, 0.2),
+    inset 2px -2px 4px rgba(205, 205, 205, 0.2),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.9),
+    inset 2px 2px 5px rgba(205, 205, 205, 0.9);
+  border-radius: 8px;
+  padding: 10px;
+}

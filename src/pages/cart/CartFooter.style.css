@@ -1,0 +1,19 @@
+.cart-footer {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #459eaf 0%, #007991 100%);
+  border-radius: 10px;
+  color: white;
+  padding-inline: 20px;
+  font-weight: 500;
+  position: fixed;
+  max-width: 500px;
+  width: 100%;
+  bottom: 5px;
+}
+
+.cart-footer .place-order {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}

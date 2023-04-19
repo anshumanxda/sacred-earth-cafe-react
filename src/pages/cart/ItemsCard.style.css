@@ -1,0 +1,22 @@
+.items-card {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-card .price-name {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  align-items: center;
+}
+
+.items-card .price-name .price {
+  font-weight: 500;
+  margin: 0;
+}
+
+.items-card .price-name .name {
+  margin: 2px;
+}

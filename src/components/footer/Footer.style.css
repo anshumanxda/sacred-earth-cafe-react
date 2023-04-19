@@ -1,0 +1,30 @@
+.footer {
+  background: #f1f1f1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count-bubble {
+  position: absolute;
+  top: 15px;
+  right: 17px;
+  width: 16px;
+  height: 16px;
+  background: #ef4b4b;
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}

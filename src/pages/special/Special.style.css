@@ -1,0 +1,67 @@
+.special-container {
+  margin-bottom: 5rem;
+  margin-top: 10rem;
+}
+
+.banner {
+  height: 160px;
+  width: 100%;
+  background-image: url("../../assets/special/special.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.186);
+  overflow: hidden;
+}
+
+.banner h2 {
+  position: absolute;
+  bottom: 0px;
+  left: 10px;
+  opacity: 1 !important;
+}
+
+.today-special {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-block: 1rem;
+}
+
+.today-special > hr {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.today-special img {
+  width: 12px;
+  height: 14px;
+  transition: all 300ms;
+}
+
+.today-special img.hidden {
+  transform: rotate(180deg);
+}
+
+.today-special p {
+  color: #4a5662;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}

@@ -1,0 +1,34 @@
+.acai-bowls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-block: 1rem;
+}
+
+.acai-bowls > hr {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.acai-bowls img {
+  width: 12px;
+  height: 14px;
+  transition: all 300ms;
+}
+
+.acai-bowls img.hidden {
+  transform: rotate(180deg);
+}
+
+.acai-bowls p {
+  color: #4a5662;
+}
+
+.desserts__menu {
+  margin-bottom: 5rem;
+}
+
+.desserts-container {
+  margin-top: 10rem;
+}
