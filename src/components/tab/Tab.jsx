@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, useLocation } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 
 import { uiSelector } from "../../redux/selectors";
@@ -10,6 +10,7 @@ const Tab = () => {
   const { currentTab } = useSelector(uiSelector)
   const navigate = useNavigate();
   const dispatch = useDispatch()
+  const location = useLocation()
 
   const handleClick = (e) => {
     const { route } = e.currentTarget.dataset;
@@ -20,7 +21,7 @@ const Tab = () => {
   return (
     <div className="tab-container">
       <div
-        className={`items ${currentTab === "special" ? "active-tab" : ""}`}
+        className={`items ${location.pathname === "/special" ? "active-tab" : ""}`}
         data-route="special"
         onClick={handleClick}
       >
@@ -29,7 +30,7 @@ const Tab = () => {
       </div>
 
       <div
-        className={`items ${currentTab === "main" ? "active-tab" : ""}`}
+        className={`items ${location.pathname === "/main" ? "active-tab" : ""}`}
         data-route="main"
         onClick={handleClick}
       >
@@ -38,7 +39,7 @@ const Tab = () => {
       </div>
 
       <div
-        className={`items ${currentTab === "desserts" ? "active-tab" : ""}`}
+        className={`items ${location.pathname === "/desserts" ? "active-tab" : ""}`}
         data-route="desserts"
         onClick={handleClick}
       >
@@ -47,7 +48,7 @@ const Tab = () => {
       </div>
 
       <div
-        className={`items ${currentTab === "beverages" ? "active-tab" : ""}`}
+        className={`items ${location.pathname === "/beverages" ? "active-tab" : ""}`}
         data-route="beverages"
         onClick={handleClick}
       >

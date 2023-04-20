@@ -15,11 +15,11 @@ const Desserts = () => {
       <Header />
 
       <div className="desserts-container">
-        <div className="acai-bowls" onClick={() => setShow(!show)}>
+        {/* <div className="acai-bowls" onClick={() => setShow(!show)}>
           <p>Acai Bowls</p>
           <hr />
           <img src={arrow} alt="" className={`${!show ? "hidden" : ""}`} />
-        </div>
+        </div> */}
 
         {
           <div className="desserts__menu">
